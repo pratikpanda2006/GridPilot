@@ -24,7 +24,8 @@ import numpy as np
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from .agents import build_agents
@@ -40,7 +41,7 @@ from .settings_store import settings_store
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("agentx.api")
 
-app = FastAPI(title="AgentX Smart Message Gate", version="0.4.0")
+app = FastAPI(title="GridPilot Smart Message Gate", version="0.4.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -297,6 +298,16 @@ def get_replay(
 # ---------------------------------------------------------------------------
 # Serve the demo SPA from /
 # ---------------------------------------------------------------------------
+
+@app.get("/logo.png")
+def get_logo():
+    logo_path = Path(__file__).resolve().parent.parent / "static" / "logo.png"
+    return FileResponse(logo_path)
+
+@app.get("/bg_ref.png")
+def get_bg_ref():
+    bg_path = Path(__file__).resolve().parent.parent / "static" / "bg_ref.png"
+    return FileResponse(bg_path)
 
 @app.get("/", response_class=HTMLResponse)
 def demo_ui():

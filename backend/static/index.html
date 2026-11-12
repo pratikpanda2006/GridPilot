@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>AgentX — Smart Message Gate</title>
+<title>GridPilot — Smart Message Gate</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -44,18 +44,24 @@ body {
 }
 
 /* ====================================================================== */
-/* WELCOME / ENTRY SCREEN (SCENE 1)                                       */
+/* WELCOME / ENTRY SCREEN (NEXUP SLEEK MINIMALIST STYLE)                  */
 /* ====================================================================== */
 #welcome-overlay {
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at 50% 20%, #151d30 0%, #0a0c10 80%);
+  background-color: #02091a;
+  background-image: 
+    radial-gradient(ellipse 70% 55% at 50% 28%, rgba(1, 18, 90, 0.55) 0%, rgba(1, 8, 32, 0.9) 65%, #010610 100%),
+    url('/bg_ref.png');
+  background-size: 100% 100%, cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
-  transition: opacity 0.35s ease, visibility 0.35s;
+  transition: opacity 0.3s ease, visibility 0.3s;
 }
 #welcome-overlay.hidden {
   opacity: 0;
@@ -63,167 +69,164 @@ body {
   pointer-events: none;
 }
 .welcome-container {
-  max-width: 920px;
+  max-width: 560px;
   width: 100%;
-  background: rgba(16, 20, 29, 0.85);
-  backdrop-filter: blur(20px);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 48px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 80px rgba(0, 229, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.welcome-logo-wrap {
+  position: relative;
+  width: 160px;
+  height: 140px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-logo-glow {
+  position: absolute;
+  inset: -12px;
+  background: radial-gradient(circle, rgba(0, 100, 220, 0.18) 0%, rgba(1, 18, 80, 0.22) 50%, transparent 72%);
+  border-radius: 50%;
+  filter: blur(22px);
+  animation: logo-glow-pulse 4.5s infinite ease-in-out;
+  pointer-events: none;
+}
+@keyframes logo-glow-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.95); }
+  50% { opacity: 0.75; transform: scale(1.04); }
+}
+.welcome-logo-img {
+  width: 150px;
+  height: 132px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 14px rgba(0, 120, 230, 0.2));
+}
+.welcome-title-h1 {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.welcome-title-h1 span.brand-x {
+  background: linear-gradient(135deg, #38bdf8 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.6));
+}
+.welcome-tagline {
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  text-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
+}
+.welcome-section-heading {
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+  letter-spacing: -0.2px;
+}
+.welcome-subtext {
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 26px;
+}
+.entry-grid-minimal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+.entry-card-minimal {
+  background: rgba(1, 8, 30, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
 }
-.welcome-container::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent-cyan), var(--accent-purple), transparent);
+.entry-card-minimal:hover {
+  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(2, 16, 56, 0.85);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55), 0 0 24px rgba(0, 140, 255, 0.2);
 }
-.welcome-brand {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
+.entry-card-minimal.demo-card {
+  border-color: rgba(56, 189, 248, 0.22);
 }
-.welcome-logo-badge {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #00e5ff 0%, #3b82f6 50%, #a855f7 100%);
+.entry-card-minimal.demo-card:hover {
+  border-color: #38bdf8;
+}
+.entry-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
-  font-weight: 800;
-  color: #050811;
-  box-shadow: 0 8px 24px rgba(0, 229, 255, 0.35);
+  flex-shrink: 0;
 }
-.welcome-title h1 {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #ffffff 30%, #8b9bb4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.entry-card-minimal.demo-card .entry-card-icon {
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.22);
 }
-.welcome-title .tagline {
-  color: var(--accent-cyan);
-  font-size: 13.5px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+.entry-card-minimal.demo-card .entry-card-icon svg {
+  stroke: #38bdf8;
 }
-.welcome-desc {
-  color: var(--text-muted);
-  font-size: 14.5px;
-  margin-bottom: 36px;
-  max-width: 760px;
-  line-height: 1.6;
+.entry-card-minimal.operator-card .entry-card-icon {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.22);
 }
-.welcome-desc strong {
-  color: #fff;
+.entry-card-minimal.operator-card .entry-card-icon svg {
+  stroke: #818cf8;
 }
-.entry-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.entry-card-minimal.operator-card {
+  border-color: rgba(99, 102, 241, 0.2);
 }
-.entry-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 28px 24px;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.25s ease;
-  cursor: pointer;
-  position: relative;
+.entry-card-minimal.operator-card:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(10, 10, 48, 0.85);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55), 0 0 24px rgba(99, 102, 241, 0.18);
 }
-.entry-card:hover {
-  border-color: var(--accent-cyan);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.12);
-}
-.entry-card.demo-card {
-  border-color: rgba(0, 229, 255, 0.4);
-  background: linear-gradient(180deg, rgba(0, 229, 255, 0.06) 0%, var(--bg-card) 100%);
-}
-.entry-card.demo-card:hover {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 16px 40px rgba(0, 229, 255, 0.25);
-}
-.entry-badge {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: rgba(0, 229, 255, 0.15);
-  color: var(--accent-cyan);
-  border: 1px solid rgba(0, 229, 255, 0.3);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 20px;
-}
-.entry-icon {
-  font-size: 32px;
-  margin-bottom: 14px;
-}
-.entry-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: #fff;
-}
-.entry-card p {
-  color: var(--text-muted);
-  font-size: 13px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+.entry-card-info {
   flex: 1;
+  min-width: 0;
 }
-.btn-entry {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 13.5px;
+.entry-card-info h3 {
+  font-size: 14.5px;
   font-weight: 700;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  color: #ffffff;
+  margin-bottom: 2px;
 }
-.btn-entry-demo {
-  background: linear-gradient(135deg, #00e5ff 0%, #3b82f6 100%);
-  color: #060913;
-  box-shadow: 0 4px 18px rgba(0, 229, 255, 0.35);
-}
-.btn-entry-demo:hover {
-  filter: brightness(1.1);
-  transform: scale(1.02);
-}
-.btn-entry-operator {
-  background: var(--border-light);
-  color: var(--text-main);
-}
-.btn-entry-operator:hover {
-  background: #37435f;
-  color: #fff;
-}
-.welcome-footer {
-  margin-top: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--text-dim);
+.entry-card-info p {
+  color: #64748b;
   font-size: 11.5px;
-  border-top: 1px solid var(--border);
-  padding-top: 16px;
+  line-height: 1.35;
+}
+.entry-card-minimal:hover .entry-card-info p {
+  color: #94a3b8;
 }
 
 /* ====================================================================== */
@@ -1042,57 +1045,47 @@ main.app-main {
 <body>
 
 <!-- =================================================================== -->
-<!-- WELCOME / ENTRY OVERLAY (SCENE 1)                                   -->
+<!-- WELCOME / ENTRY OVERLAY (SCENE 1 - NEXUP STYLE)                     -->
 <!-- =================================================================== -->
 <div id="welcome-overlay">
   <div class="welcome-container">
-    <div class="welcome-brand">
-      <div class="welcome-logo-badge">⚡</div>
-      <div class="welcome-title">
-        <h1>AgentX Smart Message Gate</h1>
-        <div class="tagline">Multi-Agent Intelligence for Smarter Grid Operations</div>
-      </div>
-    </div>
-    
-    <div class="welcome-desc">
-      Power distribution companies (DISCOMs) face alert floods from smart meters and forecasters.
-      <strong>AgentX sits in front of power procurement and inspection dispatch</strong>, coordinating 4 specialized agents
-      and a trained <strong>LightGBM intelligence gate</strong> to predict whether acting on an alert is <em>beneficial</em>,
-      <em>harmful</em>, or <em>negligible</em> before capital is committed.
+    <div class="welcome-logo-wrap">
+      <div class="welcome-logo-glow"></div>
+      <img src="/logo.png" alt="GridPilot Logo" class="welcome-logo-img" />
     </div>
 
-    <div class="entry-grid">
-      <!-- Demo Mode Card (Featured) -->
-      <div class="entry-card demo-card" onclick="startDemoMode()">
-        <span class="entry-badge">Recommended for Judges</span>
-        <div class="entry-icon">🚀</div>
-        <h3>Enter Demo Mode</h3>
-        <p>
-          Instant automated live walk-through. Executes all 4 agents against actual historical load data,
-          evaluates candidates via the LightGBM gate, executes 4-way routing, and stops for human oversight on borderline cases.
-        </p>
-        <button class="btn-entry btn-entry-demo">
-          <span>▶ Launch Live Demonstration</span>
-        </button>
+    <div class="welcome-title-h1">Grid<span class="brand-x">Pilot</span></div>
+    <div class="welcome-tagline">Predict. Prioritise. Power the Future.</div>
+
+    <div class="welcome-section-heading">Select Your Access Mode</div>
+    <div class="welcome-subtext">Choose your role to enter the intelligence network.</div>
+
+    <div class="entry-grid-minimal">
+      <!-- Demo Mode Button Card -->
+      <div class="entry-card-minimal demo-card" onclick="startDemoMode()">
+        <div class="entry-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="entry-card-info">
+          <h3>Live Demo</h3>
+          <p>Automated multi-agent evaluation</p>
+        </div>
       </div>
 
-      <!-- Operator Login Card -->
-      <div class="entry-card" onclick="startOperatorMode()">
-        <div class="entry-icon">🛡️</div>
-        <h3>Operator Mode</h3>
-        <p>
-          Full operational control-room interface for grid engineers. Inspect building telemetry, adjust economic thresholds,
-          manually trigger simulation steps, and review historical counterfactual replays.
-        </p>
-        <button class="btn-entry btn-entry-operator">
-          <span>Enter Operations Console</span>
-        </button>
+      <!-- Operator Console Button Card -->
+      <div class="entry-card-minimal operator-card" onclick="startOperatorMode()">
+        <div class="entry-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          </svg>
+        </div>
+        <div class="entry-card-info">
+          <h3>Operator Console</h3>
+          <p>Telemetry &amp; threshold control</p>
+        </div>
       </div>
-    </div>
-
-    <div class="welcome-footer">
-      <span>Dataset: BDG2 Feeder Site Robin (51 Commercial Buildings)</span>
-      <span>Model: LightGBM Multiclass (Canonical: beneficial=0, harmful=1, negligible=2)</span>
     </div>
   </div>
 </div>
@@ -1102,9 +1095,9 @@ main.app-main {
 <!-- =================================================================== -->
 <header class="app-header">
   <div class="brand-area">
-    <div class="brand-icon">⚡</div>
+    <div class="brand-icon"><img src="/logo.png" alt="Logo" style="width:28px;height:28px;object-fit:contain;filter:drop-shadow(0 0 6px rgba(0,229,255,0.7));"></div>
     <div class="brand-text">
-      <h1>AgentX Gate Console</h1>
+      <h1>GridPilot Gate Console</h1>
       <div class="feeder-info" id="site-info-tag">Feeder Site: Robin · 51 Buildings</div>
     </div>
   </div>
@@ -1767,7 +1760,7 @@ function renderCandidateCard(d) {
         <!-- Column 1: ML Decision Gate -->
         <div class="ml-gate-box">
           <div class="ml-gate-box-header">
-            <div class="ml-gate-title">⚡ LightGBM Intelligence Gate</div>
+            <div class="ml-gate-title">LightGBM Intelligence Gate</div>
             <span class="ml-pred-pill ${predClass}">Class: ${predClass.toUpperCase()}</span>
           </div>
 

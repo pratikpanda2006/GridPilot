@@ -1,0 +1,50 @@
+{
+  "status": "trained",
+  "score_type": "lightgbm",
+  "meta": {
+    "status": "trained",
+    "classes": [
+      "beneficial",
+      "harmful",
+      "negligible"
+    ],
+    "class_counts": {
+      "harmful": 71,
+      "beneficial": 16,
+      "negligible": 7
+    },
+    "n_train": 94,
+    "note": "site=Robin, step=24",
+    "algorithm": "lightgbm-multiclass"
+  },
+  "importance": {
+    "n_fixed": 76,
+    "n_weather": 3,
+    "n_peer": 0,
+    "n_trend": 36,
+    "total_agents": 8,
+    "max_deviation": 718,
+    "mean_deviation": 340,
+    "max_confidence": 559,
+    "mean_confidence": 372,
+    "high_direction": 118,
+    "low_direction": 50,
+    "disagreement": 0,
+    "norm_load": 500,
+    "dev_baseline": 597,
+    "z_score": 451,
+    "temperature": 802,
+    "weekend": 145,
+    "hour_of_day": 0,
+    "weekday": 413,
+    "log_sqm": 624,
+    "peer_count": 158,
+    "type_education": 24,
+    "type_lodging": 1,
+    "type_office": 49,
+    "type_public": 0,
+    "type_assembly": 0,
+    "type_retail": 0,
+    "type_other": 0
+  }
+}

@@ -1,0 +1,52 @@
+building_id,site_id,building_id_kaggle,site_id_kaggle,primaryspaceusage,sub_primaryspaceusage,sqm,sqft,lat,lng,timezone,electricity,hotwater,chilledwater,steam,water,irrigation,solar,gas,industry,subindustry,heatingtype,yearbuilt,date_opened,numberoffloors,occupants,energystarscore,eui,site_eui,source_eui,leed_level,rating
+Robin_public_Carolina,Robin,138.0,1.0,Public services,Library,10984.0,118231.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,6.0,,,,,,,C
+Robin_lodging_Dorthy,Robin,130.0,1.0,Lodging/residential,Dormitory,5842.9,62893.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1960.0,,16.0,,,,,,,F
+Robin_education_Zenia,Robin,120.0,1.0,Education,College Laboratory,6337.0,68211.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1976.0,,7.0,,,,,,,G
+Robin_office_Dina,Robin,142.0,1.0,Office,Office,4213.0,45348.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,,,4.0,,,,,,,C
+Robin_education_Derick,Robin,121.0,1.0,Education,College Laboratory,13965.0,150318.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network and steam,1906.0,,9.0,,,,,,,B
+Robin_education_Della,Robin,106.0,1.0,Education,College Classroom,499.3,5374.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,4.0,,,,,,,
+Robin_education_Leslie,Robin,114.0,1.0,Education,College Laboratory,12977.0,139683.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1958.0,,13.0,,,,,,,E
+Robin_office_Sammie,Robin,155.0,1.0,Office,Office,4802.0,51688.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Electricity,1930.0,,8.0,,,,,,,F
+Robin_education_Mercedes,Robin,109.0,1.0,Education,College Laboratory,5295.0,56995.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1953.0,,6.0,,,,,,,G
+Robin_education_Julius,Robin,118.0,1.0,Education,College Laboratory,12850.0,138316.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1960.0,,8.0,,,,,,,
+Robin_education_Lashandra,Robin,107.0,1.0,Education,College Classroom,9061.0,97532.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,2005.0,,10.0,,,,,,,F
+Robin_education_Lizbeth,Robin,126.0,1.0,Education,College Laboratory,2001.0,21539.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,2004.0,,5.0,,,,,,,G
+Robin_office_Gayle,Robin,141.0,1.0,Office,Office,4161.0,44789.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1919.0,,5.0,,,,,,,
+Robin_office_Shirlene,Robin,140.0,1.0,Office,Office,4647.0,50020.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,,,11.0,,,,,,,
+Robin_education_Madeline,Robin,113.0,1.0,Education,College Laboratory,9335.0,100481.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1958.0,,9.0,,,,,,,F
+Robin_lodging_Phillip,Robin,135.0,1.0,Lodging/residential,Dormitory,6181.0,66532.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1967.0,,10.0,,,,,,,D
+Robin_education_Jasper,Robin,116.0,1.0,Education,College Laboratory,3462.0,37265.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Oil,,,5.0,,,,,,,
+Robin_office_Wai,Robin,148.0,1.0,Office,Office,16221.0,174601.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1960.0,,12.0,,,,,,,F
+Robin_education_Terrance,Robin,122.0,1.0,Education,College Laboratory,7714.9,83043.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1991.0,,6.0,,,,,,,F
+Robin_lodging_Elmer,Robin,129.0,1.0,Lodging/residential,Dormitory,9565.0,102957.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1968.0,,7.0,,,,,,,G
+Robin_office_Addie,Robin,153.0,1.0,Office,Office,1495.0,16092.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1965.0,,3.0,,,,,,,
+Robin_education_Cecilia,Robin,117.0,1.0,Education,College Laboratory,1439.0,15489.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,2004.0,,4.0,,,,,,,E
+Robin_education_Kiera,Robin,105.0,1.0,Education,College Classroom,4703.0,50623.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Steam,,,5.0,,,,,,,G
+Robin_lodging_Pricilla,Robin,134.0,1.0,Lodging/residential,Dormitory,4607.0,49589.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Electric,1998.0,,8.0,,,,,,,E
+Robin_education_So,Robin,115.0,1.0,Education,College Laboratory,12051.0,129716.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1968.0,,6.0,,,,,,,F
+Robin_office_Maryann,Robin,154.0,1.0,Office,Office,3201.0,34455.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1907.0,,8.0,,,,,,,
+Robin_office_Serena,Robin,151.0,1.0,Office,Office,2833.1,30495.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1997.0,,8.0,,,,,,,D
+Robin_education_Derrick,Robin,111.0,1.0,Education,College Laboratory,10994.0,118338.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1909.0,,7.0,,,,,,,F
+Robin_education_Megan,Robin,108.0,1.0,Education,College Laboratory,7579.0,81580.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1913.0,,5.0,,,,,,,
+Robin_office_Adolph,Robin,145.0,1.0,Office,Office,1321.0,14219.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,4.0,,,,,,,
+Robin_office_Lindsay,Robin,144.0,1.0,Office,Office,5358.0,57673.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,5.0,,,,,,,C
+Robin_education_Takako,Robin,125.0,1.0,Education,College Laboratory,1561.0,16802.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1995.0,,6.0,,,,,,,
+Robin_lodging_Oliva,Robin,133.0,1.0,Lodging/residential,Dormitory,6013.0,64723.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1960.0,,8.0,,,,,,,C
+Robin_office_Victor,Robin,143.0,1.0,Office,Office,3724.0,40085.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Steam,,,4.0,,,,,,,C
+Robin_education_Margarito,Robin,119.0,1.0,Education,College Laboratory,8468.0,91149.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,2007.0,,7.0,,,,,,,E
+Robin_public_Cami,Robin,139.0,1.0,Public services,Library,5261.0,56629.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1900.0,,6.0,,,,,,,E
+Robin_education_Kristopher,Robin,123.0,1.0,Education,College Laboratory,5686.0,61204.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1989.0,,6.0,,,,,,,E
+Robin_education_Billi,Robin,124.0,1.0,Education,College Laboratory,3560.0,38319.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1900.0,,6.0,,,,,,,D
+Robin_lodging_Celia,Robin,132.0,1.0,Lodging/residential,Dormitory,7721.0,83108.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1995.0,,8.0,,,,,,,D
+Robin_office_Donald,Robin,147.0,1.0,Office,Office,7669.0,82548.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network but not ours,1977.0,,7.0,,,,,,,F
+Robin_assembly_Colleen,Robin,137.0,1.0,Entertainment/public assembly,Gymnasium,5948.0,64024.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1967.0,,6.0,,,,,,,G
+Robin_office_Soledad,Robin,152.0,1.0,Office,Office,957.0,10301.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1970.0,,2.0,,,,,,,E
+Robin_education_Audrea,Robin,110.0,1.0,Education,College Laboratory,2584.0,27814.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,2006.0,,8.0,,,,,,,G
+Robin_office_Saul,Robin,146.0,1.0,Office,Office,2937.0,31614.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1956.0,,8.0,,,,,,,D
+Robin_lodging_Donna,Robin,127.0,1.0,Lodging/residential,Dormitory,2515.0,27071.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,,,6.0,,,,,,,D
+Robin_office_Antonina,Robin,150.0,1.0,Office,Office,6099.7,65657.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1955.0,,8.0,,,,,,,E
+Robin_office_Zelma,Robin,149.0,1.0,Office,Office,7607.0,81881.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1960.0,,8.0,,,,,,,F
+Robin_lodging_Renea,Robin,128.0,1.0,Lodging/residential,Dormitory,9548.0,102774.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1956.0,,7.0,,,,,,,E
+Robin_lodging_Armand,Robin,136.0,1.0,Lodging/residential,Dormitory,5246.0,56467.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1960.0,,9.0,,,,,,,D
+Robin_education_Karyl,Robin,112.0,1.0,Education,College Laboratory,2992.0,32206.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,6.0,,,,,,,E
+Robin_lodging_Janie,Robin,131.0,1.0,Lodging/residential,Dormitory,6193.0,66661.0,51.51878965384613,-0.1345562307692307,Europe/London,Yes,,,,,,,,Education,College/University,Electric,1930.0,,7.0,,,,,,,E

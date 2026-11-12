@@ -1,0 +1,29 @@
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.pytest_cache/
+node_modules/
+*.log
+
+# Runtime cache
+backend/cache/
+
+# Dataset archives
+*.zip
+
+# Keep only Robin dataset required by AgentX
+bdg2/*
+!bdg2/sites_extracted/
+bdg2/sites_extracted/*
+!bdg2/sites_extracted/sites/
+bdg2/sites_extracted/sites/*
+!bdg2/sites_extracted/sites/Robin/
+bdg2/sites_extracted/sites/Robin/*
+!bdg2/sites_extracted/sites/Robin/metadata.csv
+!bdg2/sites_extracted/sites/Robin/meter.csv
+!bdg2/sites_extracted/sites/Robin/weather.csv
+
